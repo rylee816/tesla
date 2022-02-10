@@ -21,7 +21,7 @@ function Header() {
       </a>
       <Menu>
       {cars && cars.map((car, index) => {
-        return <a key={index} href="/">{car}</a>
+        return <a key={index} href="#">{car}</a>
       })}
       </Menu>
       <RightMenu>
@@ -35,7 +35,7 @@ function Header() {
       </CloseWrapper>
         <li><a href="#">My Account</a></li>
         {cars && cars.map((car, index) => {
-        return <li key={index}><a  href="/">{car}</a></li>
+        return <li key={index}><a  href="#">{car}</a></li>
       })}
         <li><a href="#">Used Inventory</a></li>
         <li><a href="#">Trade-In</a></li>
