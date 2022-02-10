@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <Container>
-      <a href="/" className="Navbar-logo">
+      <a href="#" className="Navbar-logo">
         <img src="./images/logo.svg" alt="tesla logo" />
       </a>
       <Menu>
@@ -25,20 +25,20 @@ function Header() {
       })}
       </Menu>
       <RightMenu>
-        <a href="/">Shop</a>
-        <a href="/">My Account</a>
+        <a href="#">Shop</a>
+        <a href="#">My Account</a>
       </RightMenu>
         <CustomMenu onClick={toggleActive} className="custom-menu"/>
       <BurgerNav show={active}>
       <CloseWrapper show={active}>
         <CustomClose onClick={toggleActive} show={active}/>
       </CloseWrapper>
-        <li><a href="/">My Account</a></li>
+        <li><a href="#">My Account</a></li>
         {cars && cars.map((car, index) => {
         return <li key={index}><a  href={car}>{car}</a></li>
       })}
-        <li><a href="/">Used Inventory</a></li>
-        <li><a href="/">Trade-In</a></li>
+        <li><a href="#">Used Inventory</a></li>
+        <li><a href="#">Trade-In</a></li>
       </BurgerNav>
     </Container>
   );
